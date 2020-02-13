@@ -181,6 +181,22 @@ h6 {
   color: var(--primary-color) !important;
 }
 
+.page-container {
+  display: grid;
+  grid-template-columns: 5fr 2fr ;
+  margin: 2rem 0;
+  grid-gap: 1rem;
+}
+
+.page-container > *:first-child {
+  grid-row: 1 / span 3;
+}
+
+.l-heading {
+  font-size: 3rem;
+  margin: 1rem 0 2rem 0;
+}
+
 /* Navigation */
 
 #main-nav {
@@ -317,7 +333,7 @@ h6 {
 }
 
 #main-footer .footer-container input[type="email"] {
-  width: 90%;
+  width: 90%;                                                                    
   padding: 0.5rem;
   margin-bottom: 0.5rem;
 }
@@ -326,3 +342,16 @@ h6 {
   width: 90%;
 }
 
+/* Article page */
+
+#article .meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  padding: 0.4rem;
+}
+
+#article .category {
+  margin-top: 0.8                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      rem;
+}
