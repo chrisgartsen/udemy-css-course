@@ -126,6 +126,35 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
 
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    transition: all 0.2s; }
+    .composition__photo--1 {
+      top: -2rem;
+      left: 0;
+      z-index: 10; }
+    .composition__photo--2 {
+      right: 0;
+      top: 2rem;
+      z-index: 10; }
+    .composition__photo--3 {
+      left: 20%;
+      top: 10rem;
+      z-index: 10; }
+    .composition__photo:hover {
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      z-index: 20;
+      outline: 1rem solid #55c57a;
+      outline-offset: 2rem; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95); }
+
 .header {
   position: relative;
   height: 95vh;
