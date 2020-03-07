@@ -12,7 +12,12 @@
 
   &--white {
     background-color: $color-white;
-    color: $color-primary-dark;
+    color: $color-grey-dark;
+  }
+
+  &--primary {
+    color: $color-white;
+    background-color: $color-primary;
   }
 
   &:hover {
