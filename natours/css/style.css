@@ -1,3 +1,15 @@
+/*
+   0 - 600 phone
+ 600 - 900 tablet portait mode
+ 900 - 1200 tablet landscape mode
+1800 + big desktops
+*/
+/*
+  phone
+  tab-port
+  tab-land
+  bigd-desktop
+ */
 *,
 *::after,
 *::before {
